@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- judul -->
+	<title>Membuat Game Batu Gunting Kertas dengan JavaScript</title>
+
+	<!-- import css -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!-- fontawesom -->
+	<script src="https://kit.fontawesome.com/d373acd037.js" crossorigin="anonymous"></script>
+
+	<!-- import javascript -->
+	<script type="text/javascript" src="js.js"></script>
+</head>
+<body>
+	<div id="mulai" class="game">
+		<h3>Silahkan pilih jagoan Anda:</h3>
+		<i class="far fa-hand-rock" onclick="batu()"></i>
+		<i class="far fa-hand-scissors" onclick="gunting()"></i>
+		<i class="far fa-hand-paper" onclick="kertas()"></i>
+	</div>
+
+	<!-- untuk hasil game -->
+	<div id="hasil" class="game">
+		<i id="manusia" class=""></i>
+		<h3>vs</h3>
+		<i id="komputer"></i>
+		<h4 id="pesan"></h4>
+		<br>
+		<i class="fas fa-redo" onclick="ulang()"></i>
+	</div>
+</body>
+</html>
